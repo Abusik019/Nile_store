@@ -1,0 +1,195 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Document</title>
+
+    <link rel="stylesheet" href="css/app.css">
+    <link rel="stylesheet" href="css/reset.css">
+    <script src="./script.js"></script>
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+</head>
+<body>
+    <header class="header">
+        <div class="header-menu">
+            <ul class="header_menu_start">
+                <li class="category"><img src="./img/category.svg" alt="category"></li>
+                <li class="menu_start_text1">NEW ARRIVAL</li>
+                <li class="menu_start_text2">MEN</li>
+                <li class="menu_start_text3">WOMEN</li>
+                <li class="menu_start_text4">KIDS</li>
+            </ul>
+            <ul class="header_menu_middle">
+                <img src="./img/nike.svg" alt="nike">
+            </ul>
+            <ul class="header_menu_end">
+                <li><img src="./img/search.svg" alt="search"></li>
+                <li><img src="./img/account.svg" alt="account"></li>
+                <li><img src="./img/shop_bag.svg" alt="bag"></li>
+            </ul>
+        </div>
+        <h1 class="background-text">AIR JORDAN 1<br>RETRO HIGH OG<br>DUNK HIGH</h1>
+        <ul class="header-content">
+            <li><img  src="./img/ellipse.svg" alt="ellipse"></li>
+            <li class="header-content_img_block">
+                <div class="header_nike" id="header-nike">
+                    <img src="./img/nike1.png" alt="shoes">
+                </div> 
+                <div class="header-line" onclick="turnRight()">
+                    <img  src="./img/360.svg" alt="line">
+                </div>
+            </li>
+            <li class="header-content_text_block">
+                <h1 class="content_text_block_title">AIR JORDAN 1<br>RETRO HIGH OG</h1>
+                <ul class="content_text_block_items">
+                    <li class="content_text_block_item1">$275</li>
+                    <li class="content_text_block_item2">Size</li>
+                    <li class="content_text_block_item3">
+                        <ul class="content_text_block_item3_1">41</ul>
+                        <ul class="content_text_block_item3_2">
+                            <select class="my-select">
+                                <option value="">41</option>
+                                <option value="">42</option>
+                                <option value="">43</option>
+                                <option value="">44</option>
+                                <option value="">45</option>
+                            </select>
+                        </ul>
+                    </li>
+                    <li class="content_text_block_item4"><img src="./img/shopping_bag.svg" alt="shopping_bag"></li>
+                </ul>
+                <button class="content_text_block_button">More Details</button>
+            </li>
+        </ul>
+        
+        <ul class="header-end">
+            <li class="header-end_item1"> 
+                <div class="previous">Previous</div>
+                <div class="next">Next</div>
+            </li>
+            <li class="header-end_item header-end_item2">
+                <img class="header-end_shoes header-end_shoes1" src="./img/header_end_nike1.png" alt="shoes">
+                <h1 class="header_shoes_text1">Nike Cosmic Unity 2</h1>
+            </li>
+            <li class="header-end_item header-end_item3">
+                <img class="header-end_shoes header-end_shoes2" src="./img/header_end_nike2.png" alt="shoes">
+                <h1 class="header_shoes_text2">NIKE SB Dunk High</h1>
+            </li>
+            <li class="header-end_item header-end_item4">
+                <img class="header-end_shoes header-end_shoes3" src="./img//header_end_nike3.png" alt="shoes">
+                <h1 class="header_shoes_text3">Nike Dynamo GO SE</h1>
+            </li>
+        </ul>
+    </header>
+    <main>
+        <img class="main-start-picture" src="./img/flash.png" alt="">
+        <div class="main_container">
+            <div class="main_block1">
+                <div class="main_block1_par">THE ESSENCE<img class="main_block1_photo" src="./img/main-cont_1.png" alt="girl photo"><br>HANDC<span class="span">RAFTED</span><br><img class="main_block1_photo2" src="./img/main-cont_2.png" alt="shoes photo">     OF FOOTWEAR.</div>
+            </div>
+            <h1 class="main-cont_text">In terms of footwear, we are the first in Canada to have opened not simple "shops" but real
+                company outlets that offer the same service as the artisan<br>shops of yesteryear: this to make you go without fail
+                every time you want to buy a pair of handmade genuine leather shoes. Without fear of<br>making mistakes and with the
+                certainty that you will be able to wear them comfortably from the<br>beginning.
+                Are you also curious to find out why hundreds of people choose us every day?
+            </h1>
+            <button class="main-cont_button">Find Out More</button>
+        </div>
+        <img class="red_shoes" src="./img/red-shoes.svg" alt="shoes">
+        <div class="main-photo_block">
+            <h1 class="block_title">BEST <span>SELLERS</span></h1>
+            <ul class="photo_block_list">
+                <li><img src="./img/women.png" alt="">women</li>
+                <li><img src="./img/Kids.png" alt="">Kid</li>
+                <li><img src="./img/Men.png" alt="">Men</li>
+            </ul>
+        </div>
+
+        <section class="main_shoes_stand">
+            <img class="shoes-stand_text" src="./img//sport_time.png" alt="text">
+            <ul class="shoes_stand_items">
+                <li class="shoes_stand_item shoes_stand_item1">
+                    <ul class="stand_item1_elem">
+                        <img src="./img/stand-shoes1.svg" alt="">
+                    </ul>
+                    <ul>
+                        <img src="./img/stand-shoes2.svg" alt="">
+                    </ul>
+                </li>
+                <li class="shoes_stand_item shoes_stand_item2">
+                    <ul>
+                        <img src="./img/stand-shoes3.svg" alt="">
+                    </ul>
+                    <ul>
+                        <img src="./img/stand-shoes4.svg" alt="">
+                    </ul>
+                </li>
+                <li class="shoes_stand_item shoes_stand_item3">
+                    <ul>
+                        <img src="./img/shoes-stand5.svg" alt="">
+                    </ul>
+                    <ul class="stand_item3_elem">
+                        <img src="./img/stand-shoes6.svg" alt=""> 
+                    </ul>
+                </li>
+            </ul>
+            <button class="shoes_stand_button">Lets Discover More</button>
+        </section>
+        
+        <section class="main_small_block">
+            <img class="small_block_img" src="./img/shoes_with_back.png" alt="shoes">
+            <article class="small_block_info">
+                <h1 class="block_info_title">WE PROVIDE MODERN<br>SHOES</h1>
+                <p class="block_info_text">Design for the way you live your life. Atoms are beautiful in their<br>simplicity, supporting your feet with absolute comfort.</p>
+                <button class="block_info_button">Explore More</button>
+            </article>
+        </section>
+
+        <section class="favourite_shoes_block">
+            <h1 class="favourite_shoes_title">Our Favorite <span>Nike</span>  styles.</h1>
+            <div class="favourite_shoes_rect"></div>
+            <article class="favourite_shoes_cont">
+                <ul class="favourite_shoes1">
+                    <li class="shoes1_name">NIKE Mercurial Superfly</li>
+                    <li class="shoes1_price">$271</li>
+                    <li><img src="./img/nike-superfly.svg" alt="shoes"></li>
+                </ul>
+                <ul class="favourite_shoes2">
+                    <li class="shoes2_name">NIKE Air Zoom Alphafly</li>
+                    <li class="shoes2_price">$216</li>
+                    <li><img class="shoes2_img" src="./img/nile-alphafly.svg" alt="shoes"></li>
+                </ul>
+                <ul class="favourite_shoes3">
+                    <li class="shoes3_name">NIKE Dunk High</li>
+                    <li class="shoes3_price">$187</li>
+                    <li><img class="shoes3_img" src="./img/nike-high.svg" alt="shoes"></li>
+                </ul>
+            </article>
+        </section>
+
+        <ul class="logo-container">
+            <li><img src="./img/adidas.svg" alt="shoes"></li>
+            <li><img src="./img/nike2.svg" alt="shoes"></li>
+            <li><img src="./img/puma.svg" alt="shoes"></li>
+            <li><img src="./img/converse.svg" alt="shoes"></li>
+            <li><img src="./img/reebook.svg" alt="shoes"></li>
+            <li><img src="./img/vans.svg" alt="shoes"></li>
+            <li><img src="./img/jordan.svg" alt="shoes"></li>
+            <li><img src="./img/new-balance.svg" alt="shoes"></li>
+        </ul>
+<!--!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!-->
+        <!-- <div class="line_long">
+            <img class="main-left_line" src="./img//long_left_line.png" alt="line">
+            <img class="main-right_line" src="./img/long_right_line.png" alt="line">
+        </div> -->
+<!-- !!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!! -->
+        
+    </main>
+    <footer>
+
+    </footer>
+</body>
+</html>
