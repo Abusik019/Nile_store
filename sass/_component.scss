@@ -1,0 +1,19 @@
+@import 'core';
+
+
+body{
+    background-color: rgb(250, 247, 247);
+    @include size(1440px,9238px);
+    margin: 0 auto;
+}
+
+.header {
+    @include size(max-width,1040px);
+    @include bg-img(url('../img/line.png'), start);
+    background-color: black;
+}
+
+main{
+    background-color: black;
+    @include size(1440px,7500px);
+}

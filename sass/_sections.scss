@@ -1,0 +1,409 @@
+@import 'core';
+
+.header-menu {
+    @include flex(space-between,start);
+    color: white;
+    @include padding(44px, 43px, 0, 43px);
+    @include size(94%,24px);
+
+    &>.header_menu_start{
+        @include size(430px,24px);
+        @include flex(space-between);
+        @include font(16px, 16px, 400);
+        
+        &>li{
+            cursor: pointer;
+        }
+        
+    }
+
+    &>.header_menu_end {
+        @include flex(space-between);
+        @include size(160px,24px);
+
+        &>li{
+            cursor: pointer;
+        }
+        
+    }
+
+    &>.header_menu_middle {
+        @include size(250px,30px);
+    }
+}
+
+.background-text {
+    @include font(128px, 128px, 700, 'Futura');
+    background: linear-gradient(rgba(255, 255, 255, 0.1), rgba(255, 255, 255, 0)) no-repeat;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    position: absolute;
+    top: 283px;
+    left: 314px;
+}
+
+.header-content {
+    @include size(1350px, max-content);
+    @include margin(170px);
+    @include flex(space-between, center);
+    position: relative;
+
+
+    &>.header-content_img_block > .header-line {
+        cursor: pointer;
+    }
+
+    &>.header-content_text_block {
+        @include size(492px, 232px);
+
+        &>.content_text_block_title {
+            color: white;
+            @include font(48px, 52px, 700, 'Futura');
+            letter-spacing: 8px;
+            width: max-content;
+
+        }
+
+        &>.content_text_block_items{
+            color: white;
+            @include font(36px, 36px, 700);
+            @include flex(space-between);
+            @include size(410px, max-content);
+            @include margin(30px);
+            
+            &>.content_text_block_item1{
+                @include size(220px,36px);
+            }
+            
+            &>.content_text_block_item2{
+                @include font(16px,19px,400);
+            }
+            
+            &>.content_text_block_item3 {
+                @include flex(space-between);
+                @include size(57px, 36px);
+
+                &>.content_text_block_item3_2 {
+                    cursor: pointer;
+                    @include margin(0, -7px);
+                    
+                    &>.my-select {
+                            background-color: #000;
+                            @include bg-img(url('../img/arrow_drop_down.svg'), center);
+                            @include size(50px, 50px);
+                            border: none;
+                            cursor: pointer;
+                     
+                            &>option {
+                                @include font(16px, 0, 700);
+                            }
+                    }
+                }
+            }
+
+            &>.content_text_block_item4{
+                cursor: pointer;
+            }
+        }
+
+        &>.content_text_block_button{
+            @include button(131px, 36px);
+            font-size: 12px;
+            font-family: 'Futura Bk BT';
+            @include padding(0, 0, 0, 20px);
+            @include bg-img(url('../img/right_arrow.svg'), 90%);
+            @include margin(35px);
+        }
+    }
+
+    
+}
+
+select:active, select:focus{
+    outline:none;
+    
+}
+
+.header-end {
+    color: #fff;
+    @include margin(200px, 50px, 0, 50px);
+    @include flex(space-between, center);
+    @include size(1340px,195px);
+
+    &>.header-end_item1{
+        @include size(215px, 32px);
+        @include flex(space-evenly, center);
+        @include font(16px, 16px, 400);        
+        @include bg-img(url('../img/left_arrow.svg'), 0%);
+////////////////////!!!!!!!!!!!!!!!!!!!////////////////////////
+        &>.previous {
+            cursor: pointer;
+        }
+
+        &>.next{
+            cursor: pointer;
+            @include size(70px,16px);
+            @include bg-img(url('../img/right_arrow2.svg'), 100%);
+        }
+////////////////////!!!!!!!!!!!!!!!!!!!////////////////////////
+    }
+
+    &>.header-end_item{
+        @include size(320px,195px);
+        border: 1px solid #fff;
+        border-bottom: none;
+
+
+        &>.header-end_shoes{
+            @include size(230px, 135px);
+            position: absolute;
+            top: 945px;
+            @include margin(0,20px);
+        }
+
+        &>.header_shoes_text1, .header_shoes_text2, .header_shoes_text3{
+            @include font(24px, 0, 400);
+            @include margin(155px, 33px);
+        }
+    }
+}
+
+.main-start-picture{
+    @include margin(90px);
+}
+
+.main_container {
+    @include size(1064px, 639px);
+    @include margin(250px, auto, 0, auto);
+
+    &>.main_block1 {
+        @include size(611px, 270px);
+        margin: 0 auto;
+
+        &>.main_block1_par{
+            color: #fff;
+            @include font(64px, 100px, 600);
+            text-align: center;
+
+            &>span{
+                background: linear-gradient(to bottom left, rgba(186, 0, 0, 1) 60%, #fff 40%);
+                -webkit-background-clip: text;
+                background-clip: text;
+                color: transparent;
+            }
+
+            &>.main_block1_photo{
+                position: absolute;
+                top: 1575px;
+                left: 1177px;
+            }
+        }
+    }
+
+    &>.main-cont_text{
+        @include margin(60px);
+        color: #fff;
+        text-align: center;
+        @include font(16px, 48px, 400);
+    }
+
+    &>.main-cont_button{
+        @include button(175px, 48px);
+        @include font(16px, 16px, 400);
+        @include bg-img(url('../img/right_arrow.svg'), 87%);
+        @include margin(69px,450px);
+        @include padding(0, 0, 0, 20px);
+
+    }
+}
+
+.red_shoes {
+    position: absolute;
+    margin-top: -350px;
+}
+
+
+
+.line_long{
+    @include flex(space-between, center);
+    margin-top: -500px;
+
+    &>.main-right_line{
+        margin-top: -3700px;
+    }
+}
+
+.main-photo_block{
+    @include size(1280px, 750px);
+    @include margin(200px, auto, 0, auto);
+
+    &>.block_title{
+        color: #fff;
+        text-align: center;
+        @include margin(20px);
+        @include font(64px, 64px, 600);
+
+        &>span{
+            background: linear-gradient(to bottom left, rgba(186, 0, 0, 1) 55%, #fff 45%);
+            -webkit-background-clip: text;
+            background-clip: text;
+            color: transparent;
+        }
+    }
+
+    &>.photo_block_list {
+        @include flex(space-between,center);
+        gap: 10px;
+        @include margin(135px);
+    }
+}
+
+.main_shoes_stand {
+    @include size(1282px, 1464px);
+    @include margin(170px, auto, 0, auto);
+
+    &>.shoes-stand_text {
+        @include size(100, 200px);
+        @include margin(30px, 400px);
+    }
+
+    &>.shoes_stand_items {
+
+        &>.shoes_stand_item1 {
+            @include margin(100px);
+
+            &>.stand_item1_elem {
+                @include margin(34px);
+            }
+        }
+
+        &>.shoes_stand_item2 {
+            @include margin(40px,auto,auto,0);
+        }
+
+        &>.shoes_stand_item3 {
+            @include margin(40px);
+
+            &>.stand_item3_elem{
+                @include margin(60px);
+            }
+        }
+
+
+
+    }
+
+    &>.shoes_stand_button {
+        @include margin(130px,530px);
+        @include font(16px,12px,400);
+        @include padding(0,0,0,10px);
+        @include bg-img(url('../img/right_arrow.svg'),90%);
+        @include button(204px, 48px);
+    }
+}
+
+.shoes_stand_item {
+    @include size(850px, 280px);
+    @include flex(space-between, center);
+}
+
+.main_small_block{
+    @include size(1240px,480px);
+    @include flex(space-between, center);
+    margin: 0 auto;
+
+    &>.small_block_img{
+        @include size(max-content, max-content);
+    }
+
+    &>.small_block_info{
+        color: #fff;
+        @include size(731px, 324px);
+
+        &>.block_info_title{
+            @include font(64px, 76px, 400);
+        }
+
+        &>.block_info_text{
+            @include margin(30px);
+            @include font(24px, 28px, 400);
+        }
+
+        &>.block_info_button{
+            @include margin(50px);
+            @include button(157px, 48px);
+            @include bg-img(url('../img/right_arrow.svg'),85%);
+            @include padding(0,0,0,20px);
+            @include font(16px, 16px, 400);
+
+        }
+
+    }
+}
+
+.favourite_shoes_block {
+    @include size(1324px, 466px);
+    margin: 0 auto;
+
+    &>.favourite_shoes_title{
+        @include font(64px, 64px, 700);
+        color: #fff;
+        text-transform: uppercase;
+
+        &>span{
+            @include font(64px, 64px, 400);
+            color: rgba(186, 0, 0, 1);
+        }
+    }
+
+    &>.favourite_shoes_cont {
+        @include size(1000px, 300px);
+        @include margin(80px, auto, auto, 0);
+        @include flex(space-between, center);
+
+        &>.favourite_shoes1,
+        .favourite_shoes2,
+        .favourite_shoes3 {
+            @include size(313px, 292px);
+
+            &>.shoes1_name,
+            .shoes1_price,
+            .shoes2_name,
+            .shoes2_price,
+            .shoes3_name,
+            .shoes3_price {
+                color: #fff;
+                text-align: right;
+                @include font(20px, 20px, 400, 'Futura');
+                @include margin(30px);
+            }
+
+            &>.shoes1_price,
+            .shoes2_price,
+            .shoes3_price {
+                color: rgba(186, 0, 0, 1);
+                @include margin(15px);
+            }
+        }
+
+    }
+
+
+}
+.shoes2_img{
+    position: absolute;
+    top: 5420px;
+    left: 950px;
+}
+
+.shoes3_img{
+    position: absolute;
+    top: 5420px;
+    left: 1280px;    
+}
+
+.logo-container{
+    @include size(1350px, 120px);
+    @include margin(300px, auto, 0, auto);
+    @include flex(space-between, center);
+}
